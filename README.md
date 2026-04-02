@@ -67,7 +67,7 @@ YouTube Spam Classifier — Implementation Plan
      import nltk
      from nltk.corpus import stopwords
 
-
+python spam_classifier.py
 
       Results
 
