@@ -67,4 +67,32 @@ YouTube Spam Classifier — Implementation Plan
      import nltk
      from nltk.corpus import stopwords
 
+
+
+      Results
+
+  ┌─────────────────────────┬───────────────────────────────────────┐
+  │         Metric          │                 Value                 │
+  ├─────────────────────────┼───────────────────────────────────────┤
+  │ Dataset                 │ 438 comments (202 not spam, 236 spam) │
+  ├─────────────────────────┼───────────────────────────────────────┤
+  │ Vocabulary size         │ 856 unique words                      │
+  ├─────────────────────────┼───────────────────────────────────────┤
+  │ 5-Fold CV Mean Accuracy │ 86.27%                                │
+  ├─────────────────────────┼───────────────────────────────────────┤
+  │ Test Set Accuracy       │ 89.09%                                │
+  ├─────────────────────────┼───────────────────────────────────────┤
+  │ Custom Comments         │ 5/6 correct                           │
+  └─────────────────────────┴───────────────────────────────────────┘
+
+  Confusion Matrix (test set):
+  - True Negatives: 41 | False Positives: 7
+  - False Negatives: 5 | True Positives: 57
+
+  The notebook spam_classifier.ipynb is ready in your project folder. You can open it in Jupyter Notebook or VS    
+  Code to run it interactively. One custom comment (#3 — "The choreography in this video is absolutely legendary") 
+  was misclassified as spam, likely because "video" appears frequently in spam comments — you may want to tweak    
+  that comment for your presentation if you'd like all 6 to be correct.
+
+
     
